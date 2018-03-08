@@ -13,7 +13,7 @@ var BeiJingCarView = (function (original) {
         this.QianSanMingArr = ["Car/car1.png.png", "Car/car2.png.png", "Car/car3.png.png", "Car/car4.png.png", "Car/car5.png.png", "Car/car6.png.png", "Car/car7.png.png", "Car/car8.png.png", "Car/car9.png.png", "Car/car10.png.png",];
         this.QianShiMingArr = ["Car/1.png.png", "Car/2.png.png", "Car/3.png.png", "Car/4.png.png", "Car/5.png.png", "Car/6.png.png", "Car/7.png.png", "Car/8.png.png", "Car/9.png.png", "Car/10.png.png",];
         this.QianSanMingCheHaoArr = ["Car/num0.png.png", "Car/num1.png.png", "Car/num2.png.png", "Car/num3.png.png", "Car/num4.png.png", "Car/num5.png.png", "Car/num6.png.png", "Car/num7.png.png", "Car/num8.png.png", "Car/num9.png.png",];
-        this.aaa = [1, 9, 5, 4, 8, 6, 7, 10, 2, 3];
+        // this.aaa = [1, 9, 5, 4, 8, 6, 7, 10, 2, 3];
         // this.NumArr = [5, 2, 3, 4, 1, 6, 10, 8, 9, 7]; 
         // this.NumArr = [];// 存排名的数组
         this.CarArr = []; // 存车的前后位置的数组
@@ -48,7 +48,18 @@ var BeiJingCarView = (function (original) {
     _proto.Http = function () {
         Http = new HttpRequestExtension();
         Http.init();
-        
+    }
+
+    _proto.ShuJu = function (data) {
+        this.aaa = data.ShangJuJieGuo;
+        console.log(data);
+        this.ShangYiJuJieGuo(this.aaa,data.QiHao,);
+        // 上一局排名
+        // for (var i = 0; i < this.QianShiMing._childs.length; i++) {
+        //    this.BoxPaiMing._childs[i].skin = this.PaiMingArr[this.aaa[i] - 1];
+        // }
+        // 本期期号
+
     }
 
 
@@ -56,8 +67,6 @@ var BeiJingCarView = (function (original) {
     _proto.ShangYiJuJieGuo = function (NumArr, QiHao, XJQiHao, XiaQiKaiJiang) {
         console.log(NumArr, Key, XJQiHao, XiaQiKaiJiang);
         this.QingHao.text = QiHao;
-        this.XiaQiKaiJiang.text = XJQiHao;
-        this.KaiJiangShiJian.text = XiaQiKaiJiang;
         for (var i = 0; i < this.BoxPaiMing._childs.length; i++) {
             this.BoxPaiMing._childs[i].skin = this.PaiMingArr[NumArr[i] - 1];
         }

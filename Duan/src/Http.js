@@ -8,12 +8,13 @@ var HttpRequestExtension = (function (_super) {
     var __proto = HttpRequestExtension.prototype;
 
     __proto.init = function () { 
-        this.xhr.send("../PeiZhi.json", "", "get", "json");
+        this.xhr.send("/PeiZhi.json", "", "get", "json");
         this.xhr.once(Laya.Event.COMPLETE, this, this.completeHandler); 
     }
 
     __proto.completeHandler = function (obj) {
         console.log(obj.JieGuo);
+        GameMainCar.ShuJu(obj);
         // obj.QiHao
     }
 

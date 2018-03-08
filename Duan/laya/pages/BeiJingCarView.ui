@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":1442,
+    "selecteID":47,
     "referenceLines":[
         {
             "value":152,
@@ -531,32 +531,6 @@
                 },
                 {
                     "x":30,
-                    "type":"Text",
-                    "props":{"y":7,"x":497,"width":60,"text":"下期开奖：","height":16,"fontSize":14,"color":"#c8c5c5"},
-                    "nodeParent":3,
-                    "label":"Text",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":18,
-                    "child":[
-                        ]
-                },
-                {
-                    "x":30,
-                    "type":"Text",
-                    "props":{"y":27,"x":497,"width":60,"text":"开奖时间：","height":16,"fontSize":14,"color":"#c8c5c5"},
-                    "nodeParent":3,
-                    "label":"Text",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":19,
-                    "child":[
-                        ]
-                },
-                {
-                    "x":30,
                     "type":"Box",
                     "props":{"y":5,"x":49,"var":"BoxPaiMing"},
                     "nodeParent":3,
@@ -691,34 +665,8 @@
         },
         {
             "x":15,
-            "type":"Text",
-            "props":{"y":7,"x":617,"width":78,"var":"XiaQiKaiJiang","text":656862,"height":16,"fontSize":14,"color":"#eabb00"},
-            "nodeParent":1,
-            "label":"Text(XiaQiKaiJiang)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":20,
-            "child":[
-                ]
-        },
-        {
-            "x":15,
-            "type":"Text",
-            "props":{"y":27,"x":617,"width":78,"var":"KaiJiangShiJian","text":"21:06:44","height":16,"fontSize":14,"color":"#006b9e"},
-            "nodeParent":1,
-            "label":"Text(KaiJiangShiJian)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":22,
-            "child":[
-                ]
-        },
-        {
-            "x":15,
             "type":"Button",
-            "props":{"y":50,"x":648,"var":"BtnShengYin","stateNum":2,"skin":"Template/Button_sound.png"},
+            "props":{"y":3,"x":618,"var":"BtnShengYin","stateNum":2,"skin":"Template/Button_sound.png"},
             "nodeParent":1,
             "label":"Button(BtnShengYin)",
             "isDirectory":false,

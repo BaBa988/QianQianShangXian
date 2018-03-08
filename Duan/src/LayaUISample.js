@@ -47,8 +47,8 @@
 
 	function onLoaded() {
 		//主游戏
-		GameMain = new BeiJingCarView();
-		Laya.stage.addChild(GameMain);
+		GameMainCar = new BeiJingCarView();
+		Laya.stage.addChild(GameMainCar);
 	}
 
 	// return this;
